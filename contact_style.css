@@ -1,0 +1,129 @@
+*{
+    font-family: "Lucida Calligraphy", serif;
+}
+
+
+.contact-card-title{
+    color:  rgba(55, 65, 81, 1);
+    border-bottom: solid 2px;
+    border-color: rgba(209, 213, 219, 1);
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.contact-content{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.contact-input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-textarea{
+    resize: none;
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
+    border-radius: 0.375rem;
+    height: 6rem;
+}
+
+.contact-button{
+    background: rgba(31, 41, 55, 1);
+    color:  rgba(243, 244, 246, 1);
+    border-radius: 0.375rem;
+    height: 2.5rem;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
+}
+
+.contact-button:hover{
+    background: rgba(55, 65, 81, 1);
+}
+
+.main-contact-info-container{
+    margin-top: 0.75rem;
+    height: 100%;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.number{
+    color: rgba(107, 114, 128, 1);
+}
+
+.number:hover{
+    text-decoration: underline;
+}
+
+.icon-links{
+    display: flex;
+    align-items: center;
+    color: rgba(107, 114, 128, 1);
+}
+.icon-links:hover{
+    text-decoration: underline;
+}
+
+.icon-links-icon{
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.contact-sub-heading{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color:  rgba(75, 85, 99, 1);
+}
+
+.contact-input-text{
+    background:  rgba(209, 213, 219, 1);
+    border-bottom: 2px solid rgba(156, 163, 175, 1);;
+    padding: 0 0.5rem;
+}
+
+.contact-input-text:focus{
+    outline: none;
+}
+
+.contact-input-flex{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 0.75rem;
+    margin: 0.5rem 0;
+    color: rgba(107, 114, 128, 1);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+
+    .contact-content{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .contact-button{
+        background:  rgba(243, 244, 246, 1);
+        color: rgba(75, 85, 99, 1);
+    }
+    .contact-button:hover{
+        background: rgba(229, 231, 235, 1);
+    }
+    .main-contact-info-container{
+        border-left: solid 2px;
+        border-color:  rgba(209, 213, 219, 1);
+    }
+    .contact-input-flex{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    .contact-card{
+        width: 66.666667%;
+    }
+}

@@ -1,0 +1,94 @@
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Calligraphy", serif;
+}
+
+li{
+    list-style: none;
+    margin: 0 3px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: gray;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background: rgba(243, 244, 246, 1);
+    font-family: 'Roboto', sans-serif;
+}
+.nav-bar {
+    overflow: hidden;
+    padding-bottom: 1.25rem;
+    background-color: rgba(229, 231, 235, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 3.5rem;
+}
+
+.drop-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.75rem;
+    height: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .nav-bar {
+        height: 5rem;
+        padding-bottom: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 5rem;
+    }
+
+    .drop-nav {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+
+    .footer {
+        height: 2.5rem;
+        background: rgba(31, 41, 55, 1);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(229, 231, 235, 1);
+    }
+
+    main {
+        padding-bottom: 7rem;
+    }
+}

@@ -1,0 +1,43 @@
+*{
+    font-family: "Lucida Calligraphy", serif;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    background: rgba(0,0,0, 0.6);
+}
+
+.overlay:target{
+    visibility: visible;
+}
+
+.popup{
+    background: wheat;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product{
+    background: white;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    margin: 8px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    text-align: center;
+}
